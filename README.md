@@ -26,6 +26,7 @@ Foco em entender como as variáveis se comportam na memória e a diferença cruc
 5. **Adição por Referência (`AddNumberRefe.c`)**: Função que soma um valor a uma variável existente diretamente na memória do programa principal.
 6. **Dois Valores por Referência (`TwoReferenceValue.c`)**: Demonstração de como uma função pode "retornar" múltiplos valores alterando várias referências simultaneamente.
 
+
 ---
 
 ##  Lista : Recursividade
@@ -36,5 +37,6 @@ Foco em algoritmos que resolvem problemas chamando a si mesmos, dividindo a tare
 3. **Exponencial Recursivo (`exponentialRecursive.c`)**: Calcula a potência de um número ($x^y$) sem utilizar laços de repetição (`for` ou `while`).
 4. **Contagem de Dígitos (`ContNum.c`)**: Função que divide sucessivamente um número por 10 para contar quantas casas decimais ele possui.
 5. **Inversão de Vetor (`ChangeWvector.c`)**: Algoritmo que troca os elementos das extremidades do vetor até que eles se encontrem no meio.
+6. **Sequência de Fibonacci (`FibonacciRecursive.c`)**: Cálculo do $n$-ésimo termo da sequência, onde cada número é resultado da soma dos dois antecessores imediatos.
 
 ---
