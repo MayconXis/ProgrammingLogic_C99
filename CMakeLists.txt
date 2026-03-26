@@ -9,4 +9,5 @@ file(GLOB SOURCES
         "Recursion-Pointers/*.c"
 )
 
-add_executable(C99Projetin ${SOURCES})
+add_executable(C99Projetin ${SOURCES}
+        Recursion-Pointers/FibonacciRecursive.c)
