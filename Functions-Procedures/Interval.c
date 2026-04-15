@@ -1,23 +1,26 @@
 #include <stdio.h>
-void ehPositive(float a, int *cont, float *soma);
+
+void interval(int a, int x, int y, int *contIn, int *contOut);
 
 int main() {
-    float n, soma = 0.0;
-    int positivos = 0;
-    for (int i = 0; i < 6; i++) {
-        scanf("%f", &n);
-        ehPositive(n,&positivos, &soma);
+    int contIn = 0, conOut = 0;
+    int x, y, n, teste;
+    scanf("%d %d %d", &x, &y, &teste);
+    for (int i = 0; i < teste; i++) {
+        scanf("%d", &n);
+       interval(n,x, y, &contIn, &conOut);
     }
-    printf("%d valores positivos\n", positivos);
-    printf("%.1f\n", soma / positivos);
+    printf("%d in\n", contIn);
+    printf("%d out\n", conOut);
 
     return 0;
 }
 
 
-void ehPositive(float a, int *cont, float *soma) {
-    if (a > 0) {
-        (*cont)++;
-        (*soma)+= a;
+void interval(int a, int interX, int interY, int *contIn, int *contOut) {
+    if (a >= interX && a <= interY) {
+        (*contIn)++;
+    } else {
+        (*contOut)++;
     }
 }
